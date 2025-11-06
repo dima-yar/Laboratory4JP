@@ -63,7 +63,7 @@ public class Car {
         this.__quantity += numberOfDeliveredCars;
     }
     public void sell(int numberOfSoldCars){
-        if(__quantity >= 1) this.__quantity -= numberOfSoldCars;
+        if(__quantity - numberOfSoldCars >= 0) this.__quantity -= numberOfSoldCars;
     }
 
     public String toString(){
